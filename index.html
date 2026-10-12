@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roscas do HOmer | Portfólio & Doceria Artesanal Gourmet</title>
+  <meta name="description" content="A lendária rosca do Homer elevada ao nível gourmet. Massas de fermentação natural, coberturas aveludadas e sabores exclusivos para consumo individual, caixas presente e eventos.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Glow & Particles Effect -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" id="brand-logo">
+        <span class="donut-icon">🍩</span>
+        <div class="brand-text">
+          <span class="brand-title">Roscas do <span class="highlight">HOmer</span></span>
+          <span class="brand-tagline">Artisanal Donuts & Bakery</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">História</a>
+        <a href="#menu" class="nav-link">Cardápio & Sabores</a>
+        <a href="#box-builder" class="nav-link">Monte Sua Box</a>
+        <a href="#events" class="nav-link">Eventos & Empresas</a>
+        <a href="#testimonials" class="nav-link">Avaliações</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-trigger-btn" id="open-cart-btn" aria-label="Abrir carrinho de compras">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-badge" id="cart-counter">0</span>
+        </button>
+        <a href="#menu" class="btn btn-primary nav-cta">
+          <span>Pedir Agora</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="sparkle">✨</span> A Rosca Mais Icônica do Mundo, Agora Artesanal
+          </div>
+          <h1 class="hero-title">
+            O sabor lendário que você sonhava, em cada <span class="text-gradient">mordida perfeita.</span>
+          </h1>
+          <p class="hero-description">
+            Inspiradas na maior obsessão da cultura pop e criadas com técnicas da alta pâtisserie francesa. 
+            Massa fermentada por 24 horas, recheios autorais e a inconfundível cobertura rosa que vai explodir no seu paladar.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn btn-primary btn-lg pulse-effect">
+              <i class="fa-solid fa-fire"></i> Ver Cardápio & Preços
+            </a>
+            <a href="#box-builder" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Montar Caixa Sortida
+            </a>
+          </div>
+
+          <div class="hero-social-proof">
+            <div class="avatar-stack">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Cliente 1">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Cliente 2">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Cliente 3">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Cliente 4">
+            </div>
+            <div class="proof-text">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <strong>4.9 / 5.0</strong>
+              </div>
+              <span>Mais de <strong>2.500+ clientes</strong> apaixonados em nossa região</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-wrapper">
+            <div class="glow-backdrop"></div>
+            <img src="assets/images/homer_pink.jpg" alt="A Famosa Rosca Rosa do Homer Simpson com Confeitos" class="hero-img floating-animation">
+            
+            <!-- Badges Flutuantes -->
+            <div class="float-badge badge-top-left glass-card">
+              <div class="badge-icon">🍩</div>
+              <div>
+                <strong>A Clássica do Homer</strong>
+                <span>Glaçagem de Frutas Vermelhas</span>
+              </div>
+            </div>
+
+            <div class="float-badge badge-bottom-right glass-card">
+              <div class="badge-icon">⚡</div>
+              <div>
+                <strong>Massa Fresca Todo Dia</strong>
+                <span>Fermentação lenta de 24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="metrics-strip">
+        <div class="container metrics-grid">
+          <div class="metric-item">
+            <span class="metric-number" data-target="50000">+50.000</span>
+            <span class="metric-label">Roscas Produzidas à Mão</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="100">100%</span>
+            <span class="metric-label">Ingredientes Selecionados & Puros</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="18">18</span>
+            <span class="metric-label">Sabores Exclusivos e Sazonais</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="99">99.7%</span>
+            <span class="metric-label">Aprovação dos Viciados em Doce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre / Diferenciais Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Nossa Fórmula Secreta</span>
+          <h2 class="section-title">Por que as Roscas do HOmer são <span class="text-gradient">incomparáveis?</span></h2>
+          <p class="section-subtitle">
+            Não é apenas um donut. É um ritual de sabor feito para quem não aceita doces comuns.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card glass-card">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3 class="feature-title">Massa Brioche Leve & Macia</h3>
+            <p class="feature-text">
+              Nossa massa descansa por 24 horas em controle térmico estrito, garantindo crocância exterior sutil e interior que derrete na boca sem oleosidade.
+            </p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-box pink-accent">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="feature-title">Glaçagens Artesanais Puras</h3>
+            <p class="feature-text">
+              Sem aromas artificiais. O glaze rosa é feito com redução de morangos frescos e framboesa, e o chocolate é 100% nobre belga com manteiga de cacau.
+            </p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-box gold-accent">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="feature-title">Finalização Feita à Mão</h3>
+            <p class="feature-text">
+              Cada confeito, fio de caramelo salgado e lâmina de avelã é colocado artesanalmente uma a uma por nossos mestres confeiteiros.
+            </p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-box purple-accent">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3 class="feature-title">Embalagem Premium para Presente</h3>
+            <p class="feature-text">
+              Nossas caixas pretas magnéticas com detalhes dourados transformam qualquer pedido em uma experiência visual inesquecível e instagramável.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cardápio / Portfólio de Produtos -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Vitrine de Sabores</span>
+          <h2 class="section-title">Nosso Cardápio <span class="text-gradient">Autoral</span></h2>
+          <p class="section-subtitle">
+            Escolha suas favoritas para entrega imediata ou agende uma caixa para celebrar hoje mesmo.
+          </p>
+
+          <!-- Filtros de Categorias -->
+          <div class="category-filters" id="category-filters">
+            <button class="filter-btn active" data-category="all">Todas as Roscas</button>
+            <button class="filter-btn" data-category="homer">Especiais do Homer</button>
+            <button class="filter-btn" data-category="supreme">Gourmet Supreme</button>
+            <button class="filter-btn" data-category="boxes">Boxes & Presentes</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+          <!-- Os produtos são renderizados dinamicamente via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Montador de Caixa Personalizada (Box Builder) -->
+    <section class="box-builder-section" id="box-builder">
+      <div class="container">
+        <div class="builder-wrapper glass-card">
+          <div class="builder-info">
+            <span class="section-tag">Personalização Total</span>
+            <h2 class="builder-title">Monte sua <span class="text-gradient">Box dos Sonhos</span></h2>
+            <p class="builder-desc">
+              Escolha o tamanho da sua caixa magnética de luxo e selecione cada uma das roscas para montar a combinação perfeita do seu jeito.
+            </p>
+
+            <div class="box-size-selector">
+              <label class="size-option active" data-slots="4" data-price="58.00">
+                <input type="radio" name="box-size" value="4" checked>
+                <div class="size-content">
+                  <span class="size-name">Box Quarteto (4 Roscas)</span>
+                  <span class="size-price">R$ 58,00</span>
+                </div>
+              </label>
+
+              <label class="size-option" data-slots="6" data-price="84.00">
+                <input type="radio" name="box-size" value="6">
+                <div class="size-content">
+                  <span class="size-name">Box Homer Supreme (6 Roscas)</span>
+                  <span class="size-price">R$ 84,00 <span class="badge-saving">Mais Pedida</span></span>
+                </div>
+              </label>
+            </div>
+
+            <div class="box-status">
+              <div class="slots-indicator">
+                <span>Roscas selecionadas: <strong id="slots-count">0</strong>/<span id="slots-total">4</span></span>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" id="slots-progress"></div>
+                </div>
+              </div>
+              <div class="box-selected-tags" id="box-selected-tags">
+                <span class="empty-hint">Nenhuma rosca adicionada à caixa ainda. Clique nos sabores ao lado!</span>
+              </div>
+            </div>
+
+            <div class="builder-actions">
+              <button class="btn btn-primary btn-lg" id="add-custom-box-btn" disabled>
+                <i class="fa-solid fa-cart-plus"></i> Adicionar Box ao Carrinho
+              </button>
+              <button class="btn btn-outline" id="reset-box-btn">
+                <i class="fa-solid fa-rotate-left"></i> Limpar
+              </button>
+            </div>
+          </div>
+
+          <div class="builder-picker">
+            <h3 class="picker-title">Escolha os sabores para preencher:</h3>
+            <div class="picker-grid" id="picker-grid">
+              <!-- Sabores carregados dinamicamente para seleção rápida -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos & Encomendas Corporativas -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <div class="events-card glass-card">
+          <div class="events-content">
+            <span class="section-tag">Eventos, Festas & Empresas</span>
+            <h2 class="events-title">Transforme sua celebração com a <span class="text-gradient">Torre de Roscas</span></h2>
+            <p class="events-desc">
+              Atendemos coffee breaks de empresas, aniversários, casamentos e ativações de marca com torres temáticas, 
+              mini-roscas personalizadas com as cores da sua empresa e estações com confeiteiro ao vivo.
+            </p>
+
+            <ul class="events-features">
+              <li><i class="fa-solid fa-circle-check"></i> Coberturas e cores personalizadas com o logo da sua empresa</li>
+              <li><i class="fa-solid fa-circle-check"></i> Estrutura de torre de donuts cenográfica para fotos</li>
+              <li><i class="fa-solid fa-circle-check"></i> Atendimento para lotes de 50 a 2.000 roscas sob encomenda</li>
+              <li><i class="fa-solid fa-circle-check"></i> Emissão de Nota Fiscal e faturamento facilitado para PJ</li>
+            </ul>
+
+            <div class="events-cta">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20evento%20corporativo%20com%20Roscas%20do%20HOmer!" target="_blank" class="btn btn-primary btn-lg">
+                <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento para Evento
+              </a>
+            </div>
+          </div>
+
+          <div class="events-media">
+            <img src="assets/images/box_party.jpg" alt="Caixa e Mesa de Roscas Gourmet para Eventos" class="events-img">
+            <div class="events-badge glass-card">
+              <i class="fa-solid fa-building"></i>
+              <div>
+                <strong>+120 Empresas Atendidas</strong>
+                <span>Google, Nubank, Ambev & Startups</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos de Clientes -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Depoimentos Reais</span>
+          <h2 class="section-title">O que dizem os nossos <span class="text-gradient">viciados em rosca</span></h2>
+          <p class="section-subtitle">
+            Avaliações autênticas de clientes que se renderam à perfeição da nossa receita.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass-card">
+            <div class="testi-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "A clássica com cobertura rosa é idêntica à do desenho, só que com um sabor absurdo de alta confeitaria! A massa parece uma nuvem de tão fofa. Não dá para comer só uma."
+            </p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Mariana Silva">
+              <div>
+                <h4>Mariana Silva</h4>
+                <span>Designer & Apaixonada por Doces</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="testi-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "Pedimos 100 unidades da Box Supreme para o aniversário da nossa agência. Foi a sensação do evento! Os clientes e colaboradores ficaram encantados com a embalagem de luxo."
+            </p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Rodrigo Albuquerque">
+              <div>
+                <h4>Rodrigo Albuquerque</h4>
+                <span>Diretor Criativo na Vórtex Mídia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="testi-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "A de Chocolate Belga com avelãs crocantes e ouro é uma obra de arte gastronômica. É surreal o equilíbrio entre o doce e a maciez. O atendimento pelo WhatsApp também foi nota dez!"
+            </p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Camila Guimarães">
+              <div>
+                <h4>Camila Guimarães</h4>
+                <span>Crítica Gastronômica</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato & Localização -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper glass-card">
+          <div class="contact-info">
+            <span class="section-tag">Venha Experimentar</span>
+            <h2 class="contact-title">Dúvidas ou encomendas <span class="text-gradient">sob medida?</span></h2>
+            <p class="contact-desc">
+              Estamos prontos para atender seu desejo. Fale conosco pelo canal de sua preferência ou mande uma mensagem rápida abaixo.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>Nossa Pâtisserie Principal</strong>
+                  <span>Av. Paulista, 1578 - Cerqueira César, São Paulo - SP</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <strong>WhatsApp Oficial de Vendas</strong>
+                  <span>(11) 99999-9999 (Atendimento 09h às 21h)</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <strong>E-mail de Parcerias & Eventos</strong>
+                  <span>contato@roscasdohomer.com.br</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <strong>Horário de Fornada Fresca</strong>
+                  <span>Terça a Domingo: 10h às 22h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="quick-contact-form">
+              <h3 class="form-title">Envie uma mensagem direta</h3>
+              
+              <div class="form-group">
+                <label for="contact-name">Seu Nome Completo</label>
+                <input type="text" id="contact-name" placeholder="Ex: Homer Simpson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-whatsapp">Seu WhatsApp</label>
+                <input type="tel" id="contact-whatsapp" placeholder="(11) 90000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-interest">Interesse Principal</label>
+                <select id="contact-interest">
+                  <option value="pedido_individual">Quero fazer um pedido hoje</option>
+                  <option value="encomenda_festa">Encomenda para aniversário ou festa</option>
+                  <option value="evento_corporativo">Evento empresarial / Coffee break</option>
+                  <option value="franquia_revenda">Quero revender na minha cafeteria</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Mensagem / Observação</label>
+                <textarea id="contact-message" rows="3" placeholder="Quantas pessoas? Algum sabor preferido?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-brands fa-whatsapp"></i> Enviar Mensagem via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé (Footer) -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <span class="donut-icon">🍩</span>
+          <div class="brand-text">
+            <span class="brand-title">Roscas do <span class="highlight">HOmer</span></span>
+            <span class="brand-tagline">Artisanal Donuts & Bakery</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          A verdadeira paixão por roscas artesanais, unindo estética marcante, ingredientes de altíssimo padrão e sabor inesquecível.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">História & Ingredientes</a></li>
+          <li><a href="#menu">Cardápio Completo</a></li>
+          <li><a href="#box-builder">Montador de Box</a></li>
+          <li><a href="#events">Eventos Corporativos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Sabores Mais Pedidos</h4>
+        <ul>
+          <li><a href="#menu">A Clássica do Homer</a></li>
+          <li><a href="#menu">Choco Belga Gold</a></li>
+          <li><a href="#menu">Pistache Imperial</a></li>
+          <li><a href="#menu">Dulce de Leche Flor de Sal</a></li>
+          <li><a href="#box-builder">Box Degustação 6 Sabores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Informações</h4>
+        <p class="footer-info-text">
+          CNPJ: 00.000.000/0001-00<br>
+          São Paulo - SP, Brasil<br>
+          Segurança SSL Certificada
+        </p>
+        <div class="payment-methods">
+          <i class="fa-brands fa-pix" title="Pix"></i>
+          <i class="fa-solid fa-credit-card" title="Cartão de Crédito"></i>
+          <i class="fa-brands fa-apple-pay" title="Apple Pay"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Roscas do HOmer. Todos os direitos reservados. Feito com amor e muito açúcar.</p>
+        <p class="credit-tag">Design & Experiência por <strong>Roscas do HOmer Studio</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal do Carrinho de Compras / Checkout -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="modal-card cart-modal-card glass-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-solid fa-basket-shopping"></i> Sua Cesta de Roscas
+        </div>
+        <button class="modal-close" id="close-cart-btn" aria-label="Fechar carrinho">&times;</button>
+      </div>
+
+      <div class="cart-items-list" id="cart-items-list">
+        <!-- Renderizado dinamicamente -->
+      </div>
+
+      <div class="cart-summary" id="cart-summary">
+        <div class="coupon-box">
+          <input type="text" id="coupon-input" placeholder="Cupom (ex: HOMER10)">
+          <button class="btn btn-secondary" id="apply-coupon-btn">Aplicar</button>
+        </div>
+        <div class="coupon-message" id="coupon-message"></div>
+
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">R$ 0,00</span>
+        </div>
+        <div class="summary-line discount-line" id="discount-row" style="display: none;">
+          <span>Desconto (<span id="discount-pct">0%</span>)</span>
+          <span id="cart-discount">- R$ 0,00</span>
+        </div>
+        <div class="summary-line total-line">
+          <span>Total Estimado</span>
+          <span id="cart-total" class="highlight-total">R$ 0,00</span>
+        </div>
+
+        <div class="cart-footer-actions">
+          <button class="btn btn-primary btn-block btn-lg" id="checkout-whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> Enviar Pedido no WhatsApp
+          </button>
+          <button class="btn btn-outline btn-block" id="clear-cart-btn">
+            <i class="fa-regular fa-trash-can"></i> Esvaziar Cesta
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Detalhes da Rosca -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-card product-modal-card glass-card">
+      <button class="modal-close" id="close-product-btn" aria-label="Fechar detalhes">&times;</button>
+      <div class="product-modal-body" id="product-modal-content">
+        <!-- Preenchido dinamicamente via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Flutuante -->
+  <div class="toast-notification" id="toast-notification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-text">Item adicionado com sucesso!</span>
+  </div>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido%20de%20Roscas%20do%20HOmer." target="_blank" class="floating-whatsapp" aria-label="Conversar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-tooltip">Peça em 2 minutos!</span>
+  </a>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
